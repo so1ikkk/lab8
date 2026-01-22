@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Курсы валют</title>
+</head>
+<body>
+    <h1>Курсы валют</h1>
+
+    <ul>
+    {% for currency in currencies %}
+        <li>{{ currency.char_code }} — {{ currency.value }}</li>
+    {% endfor %}
+    </ul>
+
+    <p><a href="/">На главную</a></p>
+</body>
+</html>

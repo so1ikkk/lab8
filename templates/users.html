@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Пользователи</title>
+</head>
+<body>
+    <h1>Список пользователей</h1>
+
+    <ul>
+    {% for user in users %}
+        <li>{{ user.name }} (ID: {{ user.id }})</li>
+    {% endfor %}
+    </ul>
+
+    <p><a href="/">На главную</a></p>
+</body>
+</html>
